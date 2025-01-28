@@ -12,8 +12,8 @@ def main():
         halkaisija = int(input(f"Pizza {i}:n halkaisija: "))
         hinta = int(input(f"Pizza {i}:n hinta: "))
 
-        pizzat[i] = pizzan_arvo(halkaisija, hinta)
+        pizzat[pizzan_arvo(halkaisija, hinta)] = i
 
-    return print(f"Pizza {min(pizzat)} antaa paremman vastineen rahalle ")
+    return print(f"Pizza {pizzat[min(pizzat)]} antaa paremman vastineen rahalle ")
 
 main()
