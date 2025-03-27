@@ -2,18 +2,13 @@
 
 .navbar {
     display: flex;
-    list-style-type: none;
-    background-color: darkblue;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
+    list-style-type: none;
+    background-color: navy;
 }
 
 .logo {
-    display: flex;
-    margin-right: auto;
-}
-
-.link {
     display: block;
     text-align: center;
     color: azure;
@@ -21,9 +16,26 @@
     text-decoration: none;
 }
 
-.link:hover {
-    background-color: azure;
-    color: darkblue;
+.nav-links {
+    list-style-type: none;
+    display: flex;
 }
 
+.nav-links li {
+    display: block;
+}
+
+.nav-links a {
+    display: block;
+    text-align: center;
+    color: azure;
+    padding: 1.5vw 4vw;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: navy;
+    background-color: azure;
+    }
 }
