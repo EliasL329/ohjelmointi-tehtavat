@@ -1,17 +1,43 @@
+body {
+    background-color: beige;
+}
+
+p {
+    padding: 0vw 5vw;
+}
+
 .container {
+display: block;
+position: static;
+width: 90%;
+background-color: rgb(57, 57, 156);
+font-size: 1.5vw;
+color: azure;
+justify-self: center;
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 5vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     list-style-type: none;
-    background-color: navy;
+    background-color: azure;
+}
+
+/* Home page*/
+
+#home {
+    height: 100vh;
 }
 
 .logo {
     display: block;
     text-align: center;
     color: azure;
+    background-color: navy;
     padding: 1.5vw 4vw;
     text-decoration: none;
 }
@@ -19,6 +45,7 @@
 .nav-links {
     list-style-type: none;
     display: flex;
+    align-self: center;
 }
 
 .nav-links li {
@@ -28,14 +55,94 @@
 .nav-links a {
     display: block;
     text-align: center;
-    color: azure;
+    color: navy;
     padding: 1.5vw 4vw;
     text-decoration: none;
-
 }
 
 a:hover {
-    color: navy;
-    background-color: azure;
+    color: azure;
+    background-color: navy;
     }
+}
+
+h1 {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20vw;
+    width: auto;
+    font-size: 6vw;
+}
+
+#home_banner {
+    height: 25vw;
+    display: flex;
+    justify-self: center;
+    width: 80vw;
+}  
+
+/* Product page */
+
+#products {
+    height: 100vh;
+}
+
+#products p {
+    padding: 1vw 3vw;
+}
+
+h2 {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    height: 12vw;
+    width: auto;
+    padding: 1vw 5vw;
+    font-size: 3vw;
+}
+
+#product_banner {
+    display: flex;
+    justify-self: center;
+    height: 20vw;
+    width: 80vw;
+}
+
+.all_products {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 60vw;
+}
+
+.all_products article {
+    height: 60vw;
+    width: 25vw;
+    background-color: rgb(115, 115, 224);
+}
+
+#product {
+    justify-self: center;
+    height: 30vw;
+    width: 23vw;
+    padding: 1vw;
+}
+
+/* Contact page */
+
+#contact {
+    height: 100vh;
+}
+
+h3 {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    height: 15vw;
+    width: auto;
+    padding: 1vw;
+    font-size: 4vw;
 }
