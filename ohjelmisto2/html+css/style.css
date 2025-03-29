@@ -112,7 +112,8 @@ h1 {
     position: static;
 }
 
-#products p {
+.product_text {
+    color: navy;
     padding: 1vh 2vw;
 }
 
@@ -128,10 +129,10 @@ h2 {
 }
 
 #product_banner {
-    display: flex;
-    justify-self: center;
+    justify-content: center;
+    padding: 0vh 1vw;
     height: 20vh;
-    width: 45vw;
+    width: 46vw;
 }
 
 .all_products {
@@ -143,19 +144,19 @@ h2 {
     min-height: 50vh;
     height: fit-content;
     width: 15vw;
-    background-color: rgb(115, 115, 224);
+    background-color: azure;
 }
 
-#product {
+.product {
     height: 25vh;
-    width: 13vw;
-    padding: 1vh 1vw;
+    width: 15vw;
+    justify-content: space-around;
 }
 
 figcaption {
-    font-size: 0.8vw;
+    font-size: 2vw;
     padding: 0vh 1vw;
-    color: beige;
+    color: navy;
 }
 
 /* Contact page */
