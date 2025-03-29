@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf ) format("truetype");
+}
+
 body {
     background-color: beige;
 }
@@ -6,20 +11,32 @@ p {
     padding: 0vw 5vw;
 }
 
+
+html {
+    font-family: Roboto;
+}
+
+
 .container {
 display: block;
 position: static;
-width: 90%;
+width: 50vw;
 background-color: rgb(57, 57, 156);
-font-size: 1.5vw;
+font-size: 1vw;
 color: azure;
 justify-self: center;
+
+
+html {
+    font-family: Roboto;
+}
 
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 5vw;
+    height: 7vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -31,15 +48,17 @@ justify-self: center;
 
 #home {
     height: 100vh;
+    position: static;
 }
 
 .logo {
     display: block;
     text-align: center;
+    align-content: center;
     color: azure;
     background-color: navy;
-    padding: 1.5vw 4vw;
-    text-decoration: none;
+    height: 7vh;
+    width: 7vw;
 }
 
 .nav-links {
@@ -55,8 +74,10 @@ justify-self: center;
 .nav-links a {
     display: block;
     text-align: center;
+    align-content: center;
     color: navy;
-    padding: 1.5vw 4vw;
+    height: 7vh;
+    width: 7vw;
     text-decoration: none;
 }
 
@@ -71,78 +92,104 @@ h1 {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 20vw;
-    width: auto;
-    font-size: 6vw;
+    min-height: 20vh;
+    height: fit-content;
+    width: 50vw;
+    font-size: 4vw;
 }
 
 #home_banner {
-    height: 25vw;
+    height: 25vh;
     display: flex;
     justify-self: center;
-    width: 80vw;
+    width: 45vw;
 }  
 
 /* Product page */
 
 #products {
     height: 100vh;
+    position: static;
 }
 
 #products p {
-    padding: 1vw 3vw;
+    padding: 1vh 2vw;
 }
 
+
 h2 {
-    overflow: hidden;
+    top: 7vh;
     display: flex;
-    align-items: flex-end;
-    justify-content: start;
-    height: 12vw;
+    text-align: center;
+    height: 10vh;
     width: auto;
-    padding: 1vw 5vw;
     font-size: 3vw;
+    padding: 1vh 2vw;
 }
 
 #product_banner {
     display: flex;
     justify-self: center;
-    height: 20vw;
-    width: 80vw;
+    height: 20vh;
+    width: 45vw;
 }
 
 .all_products {
     display: flex;
     justify-content: space-evenly;
-    max-height: 60vw;
 }
 
 .all_products article {
-    height: 60vw;
-    width: 25vw;
+    min-height: 50vh;
+    height: fit-content;
+    width: 15vw;
     background-color: rgb(115, 115, 224);
 }
 
 #product {
-    justify-self: center;
-    height: 30vw;
-    width: 23vw;
-    padding: 1vw;
+    height: 25vh;
+    width: 13vw;
+    padding: 1vh 1vw;
+}
+
+figcaption {
+    font-size: 0.8vw;
+    padding: 0vh 1vw;
+    color: beige;
 }
 
 /* Contact page */
 
 #contact {
     height: 100vh;
+    position: static;
 }
 
 h3 {
-    overflow: hidden;
     display: flex;
-    align-items: flex-end;
     justify-content: start;
-    height: 15vw;
+    top: 14vh;
+    height: 10vh;
     width: auto;
-    padding: 1vw;
-    font-size: 4vw;
+    padding: 1vh 2vw;
+    font-size: 3vw;
+}
+
+#contact p {
+    padding: 1vh 2vw;
+}
+
+#contact_info {
+    display: flex;
+    padding: 7vh 0vw;
+    
+}
+
+#map {
+    display: flex;
+    justify-self: end;
+    height: 30vh;
+    width: 30vw;
+    padding: 3vh 2vw;
+
 }
