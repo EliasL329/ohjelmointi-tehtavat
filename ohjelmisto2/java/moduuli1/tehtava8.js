@@ -5,15 +5,15 @@ const list = document.querySelector('#target');
 
 let leapYear;
 for (let i = yearMin; i <= yearMax; i += 4) {
-    if (year % 400 == 0) {
+    if (i % 400 == 0) {
         leapYear = true
     }
 
-    else if (year % 100 == 0) {
+    else if (i % 100 == 0) {
         leapYear = false
     }
 
-    else if (year % 4 == 0) {
+    else if (i % 4 == 0) {
         leapYear = true
     }
 
@@ -22,6 +22,8 @@ for (let i = yearMin; i <= yearMax; i += 4) {
     }
 
     if (leapYear) {
-        list.innerHTML = <li>i</li>
+        let li = document.createElement('li');
+        li.innerHTML = i;
+        list.appendChild(li);
     }
 }
