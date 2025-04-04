@@ -22,6 +22,19 @@ function election() {
             }
         }
     }
+
+    candidates.sort((a, b) => b.votes - a.votes)
+
+    document.querySelector('#winner').innerHTML = 'The winner is ' + candidates[0].firstName + ' with ' + candidates[0].votes + ' votes';
+    div = document.querySelector('#target');
+
+
+    for (i of candidates) {
+        const p = document.createElement('p');
+        p.innerHTML = i.firstName + ': ' + i.votes + ' votes';
+        div.appendChild(p);
+    }
+
 }
 
 election();
