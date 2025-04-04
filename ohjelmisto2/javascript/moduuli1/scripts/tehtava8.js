@@ -4,7 +4,7 @@ const yearMax = Number(prompt('Input ending year'));
 const list = document.querySelector('#target');
 
 let leapYear;
-for (let i = yearMin; i <= yearMax; i += 4) {
+for (let i = yearMin; i <= yearMax; i++) {
     if (i % 400 == 0) {
         leapYear = true
     }
