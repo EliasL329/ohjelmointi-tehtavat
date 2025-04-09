@@ -16,9 +16,9 @@ const students = [
 
 const target = document.querySelector('#target')
 
-for (let i = 1; i <= students.length; i++) {
+for (let i of students) {
   const option = document.createElement('option');
-  option.innerHTML = students[i-1].name;
-  option.value = students[i-1].id;
+  option.innerHTML = i.name;
+  option.value = i.id;
   target.appendChild(option);
 };
