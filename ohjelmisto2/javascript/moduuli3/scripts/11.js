@@ -99,11 +99,9 @@ const dialog = document.querySelector('dialog');
 for (let i of picArray) {
   const article = document.createElement('article');
   const h2 = document.createElement('h2');
-  
   const figure = document.createElement('figure');
   const img = document.createElement('img');
-  const figcaption = document.createElement('figcaption');
-  
+  const figcaption = document.createElement('figcaption');  
   const p = document.createElement('p')
   
   dialog.querySelector('img').src = i.image.large;
@@ -111,20 +109,19 @@ for (let i of picArray) {
     dialog.close();
   });
 
-  article.className = 'card';
   article.addEventListener('click', () => {
     dialog.showModal();
   });
 
+  article.className = 'card';
   h2.innerHTML = i.title;
-
   img.src = i.image.medium;
   img.alt = i.title;
   figcaption.innerHTML =  i.caption;
+  p.innerHTML = i.description;
+
   figure.appendChild(img);
   figure.appendChild(figcaption);
-
-  p.innerHTML = i.description;
 
   article.appendChild(h2);
   article.appendChild(figure);
