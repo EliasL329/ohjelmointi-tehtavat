@@ -93,3 +93,41 @@ const picArray = [
 ];
 
 // add your code here
+const section = document.querySelector('#pictures');
+const dialog = document.querySelector('dialog');
+
+for (let i of picArray) {
+  const article = document.createElement('article');
+  const h2 = document.createElement('h2');
+  
+  const figure = document.createElement('figure');
+  const img = document.createElement('img');
+  const figcaption = document.createElement('figcaption');
+  
+  const p = document.createElement('p')
+  
+  dialog.querySelector('img').src = i.image.large;
+  dialog.querySelector('span').addEventListener('click', () => {
+    dialog.close();
+  });
+
+  article.className = 'card';
+  article.addEventListener('click', () => {
+    dialog.showModal();
+  });
+
+  h2.innerHTML = i.title;
+
+  img.src = i.image.medium;
+  img.alt = i.title;
+  figcaption.innerHTML =  i.caption;
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+
+  p.innerHTML = i.description;
+
+  article.appendChild(h2);
+  article.appendChild(figure);
+  article.appendChild(p);
+  section.appendChild(article);
+};
