@@ -12,7 +12,7 @@ function createElements(result) {
         url.target = '_blank';
 
         const image = document.createElement('img');
-        image.src = i.show.image?.medium;
+        image.src = i.show.image ? i.show.image.medium : 'https://via.placeholder.com/210x295?text=Not%20Found';
         image.alt = i.show.name;
 
         const summary = document.createElement('div');
